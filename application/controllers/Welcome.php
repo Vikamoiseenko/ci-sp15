@@ -22,6 +22,6 @@ class Welcome extends CI_Controller {
 	{
 		$data['title']= "Our new Title tag";
 		$data['banner']= "Our new Title Banner";
-		$this->load->view('welcome_message');
+		$this->load->view('welcome_message', $data);
 	}
 }
