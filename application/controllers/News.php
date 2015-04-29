@@ -1,4 +1,5 @@
 <?php
+//News.php controller
 class News extends CI_Controller {
 
         public function __construct()
@@ -6,6 +7,7 @@ class News extends CI_Controller {
                 parent::__construct();
                 $this->load->model('news_model');
                 $this->config->set_item('banner','Global News Banner');
+              //  $this->config->set_item('title','News Title');
         }
 
         public function index()
@@ -29,10 +31,10 @@ class News extends CI_Controller {
 
         $data['title'] = $data['news_item']['title'];
 
-        $this->load->view('templates/header', $data);
+    //    $this->load->view('templates/header', $data);
         $this->load->view('news/view', $data);
-        $this->load->view('templates/footer');
-        }
+      //  $this->load->view('templates/footer');
+    }#end view();
 
         public function create()
         {

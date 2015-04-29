@@ -1,4 +1,5 @@
 <?php
+//views/news/view.php
 //$this->load->view('themes/bootswatch/header');
 $this->load->view($this->config->item('theme') . 'header');
 ?>

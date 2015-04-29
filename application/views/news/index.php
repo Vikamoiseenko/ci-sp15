@@ -10,7 +10,11 @@ $this->load->view($this->config->item('theme') . 'header');
         <div class="main">
                 <?php echo $news_item['text'] ?>
         </div>
-        <p><a href="<?php echo 'news/'.$news_item['slug'] ?>">View article</a></p>
+      <p>
+        <?php
+        echo anchor('news/' . $news_item['slug'], 'View Article');
+        ?>
+      </p>
 
 <?php endforeach ?>
 

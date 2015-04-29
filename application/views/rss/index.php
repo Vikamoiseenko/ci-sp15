@@ -1,9 +1,15 @@
-<h2><?php echo $title ?></h2>
 <?php
-	/*
-	echo $rss->channel->item->title;
+//view/news/index.php
+    $this->load->view($this->config->item('theme').'header');
+?>
+
+<?php
+
+    echo '<pre>';
+	var_dump($rss);
+    echo '</pre>';
 	die();
-	*/
+
 
 	foreach ($rss->channel->item as $rss_item): ?>
 
@@ -14,3 +20,7 @@
         <p><a href="<?php echo $rss_item->link ?>">View article</a></p>
 
 <?php endforeach ?>
+
+<?php
+    $this->load->view($this->config->item('theme').'footer');
+?>
