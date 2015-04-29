@@ -1,15 +1,6 @@
 <?php
-//view/news/index.php
+//view/rss/index.php
     $this->load->view($this->config->item('theme').'header');
-?>
-
-<?php
-
-    echo '<pre>';
-	var_dump($rss);
-    echo '</pre>';
-	die();
-
 
 	foreach ($rss->channel->item as $rss_item): ?>
 
