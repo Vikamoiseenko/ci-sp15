@@ -1,14 +1,12 @@
 <?php
-//view/rss/index.php
     $this->load->view($this->config->item('theme').'header');
+?>
 
-	foreach ($rss->channel->item as $rss_item): ?>
+<?php foreach ($links as $l):?>
 
-        <h3><?php echo $rss_item->title ?></h3>
-        <div class="main">
-                <?php echo $rss_item->description ?>
-        </div>
-        <p><a href="<?php echo $rss_item->link ?>">View article</a></p>
+<h3>
+	<?php echo anchor('rss/view' . $l, $l, array('title' => $l));?>
+</h3>
 
 <?php endforeach ?>
 

@@ -62,10 +62,12 @@ $route['default_controller'] = 'pages/view';
 
 */
 
-
+$route['customer'] = 'customer';
+$route['customers'] = 'customer';
 $route['news/create'] = 'news/create';
 $route['news/(:any)'] = 'news/view/$1';
 $route['news'] = 'news';
 $route['rss'] = 'rss';
+$route['rss/(:any)'] = 'rss/view/';
 $route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'pages/view';
