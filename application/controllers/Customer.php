@@ -6,9 +6,9 @@
  *
  * @package ITC260
  * @subpackage Customer
- * @author Aleksandar Petrovic <alpe88.junk@gmail.com>
+ * @author Victoria MOiseenko <moiseenkovika@gmail.com>
  * @version 1.0 2015/04/30
- * @link http://www.thisisablankspace.com/
+ * @link http://www.mykhabarovsk.com/ci
  * @license http://www.apache.org/licenses/LICENSE-2.0
  * @see Customer_model.php
  * @see index.php
